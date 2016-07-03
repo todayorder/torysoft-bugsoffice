@@ -2,6 +2,9 @@ package com.torysoft.bugsoffice.conf;
 
 import java.util.Collections;
 
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.support.BeanDefinitionRegistry;
+import org.springframework.beans.factory.support.BeanNameGenerator;
 import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +21,7 @@ import org.springframework.web.servlet.mvc.method.annotation.AbstractJsonpRespon
 
 @Configuration
 @EntityScan("com.torysoft")
+@ComponentScan(value = "com.torysoft", nameGenerator = BOBeanNameGenerator.class)
 @EnableJpaRepositories("com.torysoft")
 public class DefaultConfig {
 
@@ -44,4 +48,11 @@ public class DefaultConfig {
             }
         };
     }
+}
+
+class BOBeanNameGenerator implements BeanNameGenerator {
+	@Override
+	public String generateBeanName(BeanDefinition define, BeanDefinitionRegistry registry) {
+		return define.getBeanClassName();
+	}
 }
