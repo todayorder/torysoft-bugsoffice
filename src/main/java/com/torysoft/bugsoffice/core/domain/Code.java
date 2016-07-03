@@ -26,7 +26,7 @@ public class Code extends Default{
 	
 	@Id
 	@GeneratedValue(generator = "codeid")
-	@GenericGenerator(name = "codeid", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "codeid", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "CODE") })
 	private String codeId;
 	

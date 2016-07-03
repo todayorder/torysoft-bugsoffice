@@ -24,7 +24,7 @@ public class User extends Default {
 
 	@Id
 	@GeneratedValue(generator = "user-uuid")
-	@GenericGenerator(name = "user-uuid", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "user-uuid", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "UUID") })
 	private String uuid;
 	private String userId;

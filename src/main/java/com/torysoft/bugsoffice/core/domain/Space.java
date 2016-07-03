@@ -29,7 +29,7 @@ public class Space extends Default{
 
 	@Id
 	@GeneratedValue(generator = "spaceId")
-	@GenericGenerator(name = "spaceId", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "spaceId", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "SPACE") })
 	private String spaceId;
 	private String spaceName;

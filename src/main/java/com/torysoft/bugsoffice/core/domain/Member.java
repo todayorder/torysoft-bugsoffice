@@ -26,7 +26,7 @@ public class Member extends Default{
 	
 	@Id
 	@GeneratedValue(generator = "memberId")
-	@GenericGenerator(name = "memberId", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "memberId", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "MEMBER") })
 	private String memberId;
 	

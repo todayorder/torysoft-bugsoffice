@@ -23,7 +23,7 @@ public class Release extends Default{
 
 	@Id
 	@GeneratedValue(generator = "releaseId")
-	@GenericGenerator(name = "releaseId", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "releaseId", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "RELID") })
 	private String releaseId;
 	private String releaseVersion;

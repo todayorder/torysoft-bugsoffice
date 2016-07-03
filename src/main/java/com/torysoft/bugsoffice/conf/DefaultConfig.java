@@ -21,7 +21,6 @@ import org.springframework.web.servlet.mvc.method.annotation.AbstractJsonpRespon
 
 @Configuration
 @EntityScan("com.torysoft")
-@ComponentScan(value = "com.torysoft", nameGenerator = BOBeanNameGenerator.class)
 @EnableJpaRepositories("com.torysoft")
 public class DefaultConfig {
 
@@ -48,11 +47,4 @@ public class DefaultConfig {
             }
         };
     }
-}
-
-class BOBeanNameGenerator implements BeanNameGenerator {
-	@Override
-	public String generateBeanName(BeanDefinition define, BeanDefinitionRegistry registry) {
-		return define.getBeanClassName();
-	}
 }

@@ -19,7 +19,7 @@ import lombok.Data;
 public class Default{
 	
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date saveTime;
+	private Date saveTime = new Date();
 	
 	@OneToOne
 	@JoinColumn(name = "saveUser")

@@ -28,7 +28,7 @@ public class Case extends Default{
 	
 	@Id
 	@GeneratedValue(generator = "caseId")
-	@GenericGenerator(name = "caseId", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "caseId", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "CASEID") })
 	private String caseId;
 	

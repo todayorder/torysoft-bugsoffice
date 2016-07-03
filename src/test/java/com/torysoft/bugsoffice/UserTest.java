@@ -1,5 +1,6 @@
 package com.torysoft.bugsoffice;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.transaction.Transactional;
@@ -31,11 +32,23 @@ public class UserTest {
 	
 	@Before
 	public void before() {
+		
+		User saveUser = new User();
+		saveUser.setUserName("saveUser");
+		saveUser = userRepository.save(saveUser);
+		
+		User updateUser = new User();
+		updateUser.setUserName("updateUser");
+		updateUser = userRepository.save(updateUser);
+		
 		for(int i=0; i < 5; i++){
 			User user = new User();
 //			user.setUserId("id");
 //			user.setEmail("sdfd@naver.com");
 			user.setUserName("user["+i+"]");
+			user.setSaveUser(saveUser);
+			user.setUpdateTime(new Date());
+			user.setUpdateUser(updateUser);
 			userRepository.save(user);
 		}
 		

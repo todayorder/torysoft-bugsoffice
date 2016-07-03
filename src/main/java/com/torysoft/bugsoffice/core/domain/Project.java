@@ -27,7 +27,7 @@ public class Project {
 	
 	@Id
 	@GeneratedValue(generator = "projectId")
-	@GenericGenerator(name = "projectId", strategy = "com.torysoft.bugsoffice.common.utils.IdGenerator", parameters = {
+	@GenericGenerator(name = "projectId", strategy = "com.torysoft.bugsoffice.core.domain.util.IdGenerator", parameters = {
 			@Parameter(name = IdGenerator.PREFIX, value = "PJT") })
 	private String projectId;
 	private String projectName;
