@@ -1,4 +1,4 @@
-package com.torysoft.bugsoffice.core.user.domain;
+package com.torysoft.bugsoffice.core.domain;
 
 import java.util.Date;
 
@@ -13,7 +13,7 @@ import org.hibernate.annotations.Parameter;
 
 import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
-import com.torysoft.bugsoffice.core.user.domain.code.UserType;
+import com.torysoft.bugsoffice.core.code.UserType;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

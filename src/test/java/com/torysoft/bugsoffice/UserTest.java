@@ -14,8 +14,8 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.torysoft.bugsoffice.core.user.domain.User;
-import com.torysoft.bugsoffice.core.user.repository.UserRepository;
+import com.torysoft.bugsoffice.core.domain.User;
+import com.torysoft.bugsoffice.core.repository.UserRepository;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)

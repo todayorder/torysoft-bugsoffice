@@ -11,7 +11,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import com.torysoft.bugsoffice.common.code.YON;
-import com.torysoft.bugsoffice.core.user.domain.User;
+import com.torysoft.bugsoffice.core.domain.User;
 
 import lombok.Data;
 

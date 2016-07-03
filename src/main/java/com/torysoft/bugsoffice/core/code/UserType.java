@@ -1,4 +1,4 @@
-package com.torysoft.bugsoffice.core.user.domain.code;
+package com.torysoft.bugsoffice.core.code;
 
 public enum UserType {
 	TESTER, QA, OWNER, ADMINISTRATOR

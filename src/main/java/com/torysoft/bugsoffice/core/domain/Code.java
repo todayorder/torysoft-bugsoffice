@@ -1,4 +1,4 @@
-package com.torysoft.bugsoffice.core.code.domain;
+package com.torysoft.bugsoffice.core.domain;
 
 import java.util.LinkedList;
 import java.util.List;
