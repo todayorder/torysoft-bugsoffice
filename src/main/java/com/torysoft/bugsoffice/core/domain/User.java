@@ -42,4 +42,7 @@ public class User extends DefaultDomain {
 	private String postCode;
 	private String addrMain;
 	private String addrDetail;
+	private String country;
+	private String language;
+	private String timeZone;
 }
