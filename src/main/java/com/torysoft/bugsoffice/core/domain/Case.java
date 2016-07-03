@@ -15,8 +15,8 @@ import javax.persistence.OneToOne;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.utils.IdGenerator;
 import com.torysoft.bugsoffice.core.code.TestResultType;
+import com.torysoft.bugsoffice.core.domain.util.IdGenerator;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

@@ -1,4 +1,4 @@
-package com.torysoft.bugsoffice.common.utils;
+package com.torysoft.bugsoffice.core.domain.util;
 
 import java.io.Serializable;
 import java.util.Date;
