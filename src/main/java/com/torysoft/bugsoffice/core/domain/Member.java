@@ -13,7 +13,6 @@ import javax.persistence.OneToOne;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 import com.torysoft.bugsoffice.core.code.MemberRole;
 
@@ -23,7 +22,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Member extends DefaultDomain{
+public class Member extends Default{
 	
 	@Id
 	@GeneratedValue(generator = "memberId")

@@ -14,7 +14,6 @@ import javax.persistence.OneToOne;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 import com.torysoft.bugsoffice.core.code.TesterRole;
 
@@ -24,7 +23,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Tester extends DefaultDomain{
+public class Tester extends Default{
 
 	@Id
 	@GeneratedValue(generator = "testerId")

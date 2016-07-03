@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 import com.torysoft.bugsoffice.core.code.UserType;
 
@@ -21,7 +20,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class User extends DefaultDomain {
+public class User extends Default {
 
 	@Id
 	@GeneratedValue(generator = "user-uuid")

@@ -16,7 +16,6 @@ import javax.persistence.OneToOne;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 import com.torysoft.bugsoffice.core.code.SpaceType;
 
@@ -26,7 +25,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Space extends DefaultDomain{
+public class Space extends Default{
 
 	@Id
 	@GeneratedValue(generator = "spaceId")

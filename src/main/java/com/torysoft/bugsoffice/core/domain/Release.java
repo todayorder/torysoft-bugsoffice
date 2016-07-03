@@ -11,7 +11,6 @@ import javax.persistence.ManyToOne;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 
 import lombok.Data;
@@ -20,7 +19,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Release extends DefaultDomain{
+public class Release extends Default{
 
 	@Id
 	@GeneratedValue(generator = "releaseId")

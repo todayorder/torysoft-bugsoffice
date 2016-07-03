@@ -1,4 +1,4 @@
-package com.torysoft.bugsoffice.common.domain;
+package com.torysoft.bugsoffice.core.domain;
 
 import java.util.Date;
 
@@ -10,14 +10,13 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.torysoft.bugsoffice.common.code.YON;
-import com.torysoft.bugsoffice.core.domain.User;
+import com.torysoft.bugsoffice.core.code.YON;
 
 import lombok.Data;
 
 @MappedSuperclass
 @Data
-public class DefaultDomain{
+public class Default{
 	
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date saveTime;

@@ -14,7 +14,6 @@ import javax.persistence.OneToMany;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
-import com.torysoft.bugsoffice.common.domain.DefaultDomain;
 import com.torysoft.bugsoffice.common.utils.IdGenerator;
 
 import lombok.Data;
@@ -23,7 +22,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class Code extends DefaultDomain{
+public class Code extends Default{
 	
 	@Id
 	@GeneratedValue(generator = "codeid")
