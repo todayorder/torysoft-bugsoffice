@@ -1,0 +1,7 @@
+@CHARSET "UTF-8";
+
+.header-logo img.icon {
+	height: 40px;
+    float: left;
+    margin-right: 10px;
+}
